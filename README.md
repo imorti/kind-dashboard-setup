@@ -5,7 +5,7 @@ This yaml can be used to install the kubernetes dashboard onto Kind or Minikube.
 You have a kubernetes cluster configured and are using the proper context with `kubectl`. 
 
 # Process
-1. Run `kind create cluster --nameee <name of cluster> --config config.yaml`
+1. Run `kind create cluster --name <name of cluster> --config config.yaml`
 2. Run `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml`
 3. Run `kubectl apply -f dashboard-adminuser.yaml`
 4. Run `kubectl apply -f clusterrolebinding.yaml`

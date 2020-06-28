@@ -5,6 +5,7 @@ This yaml can be used to install the kubernetes dashboard onto Kind or Minikube.
 You have a kubernetes cluster configured and are using the proper context with `kubectl`. 
 
 # Process
+
 1. Install `kind` by running `brew install kind`. 
 2. Create cluster by running `kind create cluster`. 
 3. Check kubernetes config by running `kubectl get nodes -o wide`. You should see some output like this: 

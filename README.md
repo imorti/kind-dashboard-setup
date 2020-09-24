@@ -7,7 +7,7 @@ You have a kubernetes cluster configured and are using the proper context with `
 # Process
 
 1. Install `kind` by running `brew install kind`. 
-2. Create cluster by running `kind create cluster`. 
+2. Create cluster by running `kind create cluster --config=config.yaml`. 
 3. Check kubernetes config by running `kubectl get nodes -o wide`. You should see some output like this: 
 ![alt text](kind-ready.png)
 4. Now let's apply the Dashboard. Run `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml`
